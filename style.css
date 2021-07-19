@@ -1,0 +1,33 @@
+<style>
+
+ #active{
+   color:red;
+ }
+ .saw{
+   color:gray;
+ }
+ a {
+   color:black;
+   text-decoration: none;
+ }
+
+ h1,a{
+/* block level element  */
+/* border-width: 100%;
+border-color: red;
+border-style:solid; */
+border:10px solid red;
+padding:50px;/*(컨텐트와 테두리 사이 간격)*/
+margin:50px;/*(테두리 사이의 값)*/
+ width:50px;/*(폭) */
+   font-size: 250%; /* font-size 1em = 10px on default browser settings */
+   text-align: center;
+    }
+    /* inline element */
+/* a{
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  display: block;
+} */
+</style>
