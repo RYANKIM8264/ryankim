@@ -1,33 +1,49 @@
 <style>
-
- #active{
-   color:red;
+#active{
+  color:red;
+}
+.saw{
+  color:gray;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size: 50px;
+  border-bottom: 4px solid skyblue;
+  text-align: center;
+  margin:10px;
+   }
+ol{
+   /* border-right:2px solid darkgray; */
+   width:140px;
+   margin-right:1px;
+   }
+ #grid{
+   /* border:5px solid red; */
+   display: grid;
+   grid-template-columns: 1fr 4fr;
  }
- .saw{
-   color:gray;
+ #grid ol{
+   padding-left: 50px;
  }
- a {
-   color:black;
-   text-decoration: none;
+ #grid article{
+   border-left: 3px solid gray;
+   padding-left: 30px;
  }
-
- h1,a{
-/* block level element  */
-/* border-width: 100%;
-border-color: red;
-border-style:solid; */
-border:10px solid red;
-padding:50px;/*(컨텐트와 테두리 사이 간격)*/
-margin:50px;/*(테두리 사이의 값)*/
- width:50px;/*(폭) */
-   font-size: 250%; /* font-size 1em = 10px on default browser settings */
-   text-align: center;
+/* screen width < 800px */
+ @media(max-width:800px){
+   #grid{
+     /* border:5px solid red; */
+     display: block;
+   }
+    #grid article{
+    border-left: none;
     }
-    /* inline element */
-/* a{
-  border-width: 5px;
-  border-color: red;
-  border-style: solid;
-  display: block;
-} */
+    h1{
+      border-bottom: none;
+    }
+  }
+
 </style>
