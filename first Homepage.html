@@ -31,44 +31,81 @@ h1{
   margin:10px;
    }
 ol{
-   border-right:2px solid darkgray;
+   /* border-right:2px solid darkgray; */
    width:140px;
    margin-right:1px;
    }
+ #grid{
+   /* border:5px solid red; */
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+ }
+ #grid ol{
+   padding-left: 50px;
+ }
+ #grid article{
+   border-left: 3px solid gray;
+   padding-left: 30px;
+ }
+/* screen width < 800px */
+ @media(max-width:800px){
+   #grid{
+     /* border:5px solid red; */
+     display: block;
+   }
+    #grid article{
+    border-left: none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+
 </style>
 </head>
 
 <body>
 <h1><font color="skyblue">Ryan's first Homepage</font></h1>
+
+<div id="grid">
+<div>
 <ol type="I">
 <li><a href="https://blog.naver.com/coolkarls" target="_blank"> Who's Ryankim? </a></li>
 <li><a href="https://github.com/RYANKIM8264/ryankim/blob/main/first%20Homepage.html" target="_blank"> Ryankim's History. </a></li>
 <li><a href="https://blog.naver.com"target=" _blank"> Ryankim's vision! </a></li>
 </ol>
-
-<!-- <ol type="1">
+ </div>
+<div id="article">
+  <!-- <ol type="1">
 <li><a href="https://blog.naver.com/coolkarls" target="_blank"> Who's Ryankim </a></li>
 <li><a href="2.html" target="_blank"> Nice Guy </a></li>
 <li><a href="3.html"target=" _blank"> Legend </a></li>
 </ol> -->
-
+<article>
+<p>
 <h2><font color="green">I. Who's Ryankim?</font></h2>
 No.1<input type="checkbox" name="a" value="">He is the best NiceGuy!<br>
 No.2<input type="checkbox" name="c" value="">He name is ByoungSub Kim<br>
 No.3<input type="checkbox" name="b" value="">He live's Uejeongbu<br>
+<br>
 He is hero in the fantasy world, black desert.<br>
 <img src="hero.jpg" width= "560">
-
+</p>
 <p><h3> II Ryankim's History.</h3><br>
   <h4>He's favorite song and singer. </h4><br>
   <h5>안녕, 사랑아. -박효신- </h5><br>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/SMVDbkmNjWY"
   title="YouTube video player" frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</p>
 <p><h3> III Ryankim's vision!</h3><br>
   <h4>Rater, He create the new virtual World! </h4><br>
 <img src="img.png" width= "560">
+</p>
+</article>
+</div>
+
+
 
   <div id="disqus_thread"></div>
   <script>
