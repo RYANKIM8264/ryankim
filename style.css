@@ -20,14 +20,16 @@ ol{
    width:140px;
    margin-right:1px;
    }
+
  #grid{
    /* border:5px solid red; */
    display: grid;
    grid-template-columns: 1fr 4fr;
+
  }
  #grid ol{
    padding-left: 50px;
- }
+   }
  #grid article{
    border-left: 3px solid gray;
    padding-left: 30px;
